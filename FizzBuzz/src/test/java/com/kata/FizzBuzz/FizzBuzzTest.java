@@ -9,4 +9,10 @@ public class FizzBuzzTest {
 	    public void getResultShouldReturnFizzIfTheNumberIsDividableBy3() {
 	        Assert.assertEquals("fizz", FizzBuzz.getResult(3));
 	    }
+	 
+	 @Test
+	    public void getResultShouldReturnBuzzIfTheNumberIsDividableBy5() {
+	        Assert.assertEquals("buzz", FizzBuzz.getResult(5));
+	       
+	    }
 }
