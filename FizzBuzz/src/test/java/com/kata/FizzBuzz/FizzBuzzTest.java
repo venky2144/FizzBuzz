@@ -13,7 +13,7 @@ public class FizzBuzzTest {
 	 @Test
 	    public void getResultShouldReturnBuzzIfTheNumberIsDividableBy5() {
 	        Assert.assertEquals("buzz", FizzBuzz.getResult(5));
-	        Assert.assertEquals("buzz", FizzBuzz.getResult(15));
+	        Assert.assertEquals("fizzbuzz", FizzBuzz.getResult(15));
 	       
 	    }
 	 
