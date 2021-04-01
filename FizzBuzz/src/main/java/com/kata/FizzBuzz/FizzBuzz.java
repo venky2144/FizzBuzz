@@ -2,17 +2,25 @@ package com.kata.FizzBuzz;
 
 public class FizzBuzz {
 
+	private static final int FIFTEEN = 15;
+	private static final int THREE = 3;
+	private static final int FIVE = 5;
+	private static final int ZERO = 0;
+	static final String FIZZ = "Fizz";
+	static final String BUZZ = "Buzz";
+	static final String FIZZ_BUZZ = "FizzBuzz";
+
 	public static String getResult(int inputValue) {
-		
-		if (inputValue % 15 == 0)
-			 return "fizzbuzz";
-		if (inputValue % 3 == 0) 
-			return "fizz";
-		 if(inputValue % 5 == 0)
-			 return "buzz";
-		 
-		 return Integer.toString(inputValue);
-		
+
+		if (inputValue % FIFTEEN == ZERO)
+			return FIZZ_BUZZ;
+		if (inputValue % THREE == ZERO)
+			return FIZZ;
+		if (inputValue % FIVE == ZERO)
+			return BUZZ;
+
+		return Integer.toString(inputValue);
+
 	}
 
 }
