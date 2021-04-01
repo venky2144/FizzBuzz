@@ -14,12 +14,12 @@ public class FizzBuzz {
 
 		if (inputValue % FIFTEEN == ZERO)
 			return FIZZ_BUZZ;
-		if (inputValue % THREE == ZERO)
+		else if (inputValue % THREE == ZERO)
 			return FIZZ;
-		if (inputValue % FIVE == ZERO)
+		else if (inputValue % FIVE == ZERO)
 			return BUZZ;
 
-		return Integer.toString(inputValue);
+		else return Integer.toString(inputValue);
 
 	}
 
