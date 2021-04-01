@@ -7,6 +7,8 @@ public class FizzBuzz {
 			return "fizz";
 		 if(inputValue % 5 == 0)
 			 return "buzz";
+		 if (inputValue % 15 == 0)
+			 return "fizzbuzz";
 		 return Integer.toString(inputValue);
 		
 	}
