@@ -23,4 +23,10 @@ public class FizzBuzzTest {
 	        Assert.assertEquals("fizzbuzz", FizzBuzz.getResult(30));
 	    }
 	 
+	 @Test
+	    public void getResultShouldReturnTheSameNumberIfNoOtherRequirementIsFulfilled() {
+	        Assert.assertEquals("1", FizzBuzz.getResult(1));
+	        Assert.assertEquals("2", FizzBuzz.getResult(2));
+	        Assert.assertEquals("4", FizzBuzz.getResult(4));
+	    }
 }
